@@ -1,0 +1,20 @@
+{ "weeks": [
+  {
+    "capacity": 8,
+    "tasks": [
+      { "done": 2, "total": 2,
+        "title": "User Story 1",   "status": "easy" },
+      { "done": 3, "total": 3,
+        "title": "User Story 2", "status": "fun" },
+      { "done": 1, "total": 2,
+        "title": "Update chart" }
+    ]
+  },
+  {
+    "capacity": 8,
+    "tasks": [
+      { "done": 0, "total": 1, "title": "backup" },
+      { "done": 0, "total": 3, "title": "remove file" }
+    ]
+  }
+]}
