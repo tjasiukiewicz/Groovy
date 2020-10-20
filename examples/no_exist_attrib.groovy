@@ -14,3 +14,4 @@ def x = new X()
 println x.noExist
 
 x.boom = 'moose'
+

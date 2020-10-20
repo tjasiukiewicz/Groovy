@@ -5,7 +5,7 @@
 //def value = 12
 //def value = 1000
 //Float value = 3.14
-//def value = 42
+def value = 99
 
 switch(value) {
     case 0:             println "0"; break
@@ -15,4 +15,4 @@ switch(value) {
     case {it % 5 == 0}: println "it % 5"; break
     case ~/../:         println "~/../"; break
     default:            prinln "default"
-} 
+}

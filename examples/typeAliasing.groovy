@@ -1,7 +1,7 @@
 import oldlib.Calculate as WrongCalculate
 
 class Calculate extends WrongCalculate {
-    Integer double(Integer value) {
+    Integer doubles(Integer value) {
         return value * 2
     }
 }

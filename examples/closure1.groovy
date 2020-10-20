@@ -9,3 +9,6 @@ def Closure getPrinter() {
 
 file.eachLine(getPrinter())
 
+for (line: new File('data.txt')) {
+    println line
+}
