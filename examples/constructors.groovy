@@ -26,7 +26,8 @@ class SimpleProduct {
 new SimpleProduct()
 new SimpleProduct(name:'Car', price:3234.4)
 new SimpleProduct(name:'House')
-new SimpleProduct(price: 65.1)
+product = new SimpleProduct(price: 65.1)
+product.name = "saw"
 
 //
 // Implict constructor

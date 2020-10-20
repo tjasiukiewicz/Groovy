@@ -15,4 +15,6 @@ def doubleMethod(item) {
 }
 
 map.each(this.&doubleMethod)
+map.each { element -> doubleMethod(element) }
+//map.each(doubleMethod) // Error!
 println map
