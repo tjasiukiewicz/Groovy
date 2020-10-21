@@ -1,9 +1,9 @@
 // object serialize
 // req: object is serializable
-file = new File('objects.dat')
+file = new File('/tmp/objects.dat')
 file.deleteOnExit()
 
-objects = [1, "Little text", new Date()]
+objects = [1, "Little text", new Date(), [new Date(), ['a': 12]]]
 file.withObjectOutputStream { outstream ->
   objects.each {
     outstream << it

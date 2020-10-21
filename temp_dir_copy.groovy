@@ -1,6 +1,6 @@
 // Temp dir & copy file
 
-File tempDir = File.createTempDir()
+File tempDir = File.createTempDir() // Linux -> /tmp
 
 assert tempDir.directorySize() == 0 // empty dir
 

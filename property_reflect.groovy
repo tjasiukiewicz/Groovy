@@ -1,7 +1,7 @@
 // property reflect..
 class MyClass {
     def first = 1
-    def getSecond() { first * 2 }
+    def getSecond() { first * 2 } // ro obj.second
     public third = 3
     def myMethod() { }
 }
@@ -23,4 +23,7 @@ assert 1 == obj['first']    // getAt('first')
 def one = 'first'
 def two = 'second'
 obj[one] = obj[two]         // putAt(one)
+
+println ([1,2,3].dump())
+println ((new Date()).dump())
 assert obj.dump() =~ 'first=2'

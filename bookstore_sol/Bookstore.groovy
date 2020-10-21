@@ -32,7 +32,7 @@ class  Box {
 		def sumPrices = 0
 		books.each { book ->
 			result += "Title: $book.title\tPrice: $book.price\n"
-			prices += book.price
+			sumPrices += book.price
 		}
 		result += "$lineSeparator\nSum: $sumPrices"
 		result
@@ -71,12 +71,25 @@ class Book {
 // (US1)
 def person = new Person('Adam Zazol', 'Koluszki 03-331 Zagumienna 8')
 def box = new Box(owner:person)
+def seller = new Seller()
 // (US2)
 def book1 = new Book(title:'W kuchni i lesie', price: 323.33)
 def book2 = new Book(title:'Oko za rogiem', price: 21.1)
-def seller = new Seller()
+
 seller.addBook(book1, box)
 seller.addBook(book2, box)
 // (US3)
 seller.send(box)
 
+
+class X {
+
+    def value = 42
+    String toString() {
+        "X, value = $value"
+    }
+}
+
+x = new X()
+
+println x.toString()

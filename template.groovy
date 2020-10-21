@@ -12,7 +12,7 @@ Prosimy o zapłatę ostatniej faktury VAT. W przeciwnym
 wypadku grożą następujące konsekwencje:
 <% threats.each { %>- $it 
 <% } %> 
-Bardzo dziękujemy że wybrała ${favor} naszą firmę.
+Bardzo dziękujemy że wybrała ${salutation} naszą firmę.
 Mamy nadzieję że wyróżniamy się uprzejmością.
 '''
 
@@ -35,6 +35,6 @@ wypadku grożą następujące konsekwencje:
 - dekapitacja 
 - tarzanie w smole i pierzu 
  
-Bardzo dziękujemy że wybrała Droga naszą firmę.
+Bardzo dziękujemy że wybrała Pani naszą firmę.
 Mamy nadzieję że wyróżniamy się uprzejmością.
 '''

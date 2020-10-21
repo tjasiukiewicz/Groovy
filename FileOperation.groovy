@@ -10,6 +10,6 @@ assert 5 == file.grep {it}.size()
 file = new File('.')
 println file.name
 println file.absolutePath
-println file.canonicalPath
+println file.canonicalPath // /home/student <- $PWD ../../etc/../usr/../tmp  
 println file.directory
 // Other: java.io.File and GDK File... 

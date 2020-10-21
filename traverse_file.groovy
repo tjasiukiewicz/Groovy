@@ -21,4 +21,3 @@ println "$count directories in $srcDir.name"
 count = 0
 srcDir.eachFileRecurse(DIRECTORIES) { count++ }
 println "$count directories in $srcDir.name"
-
