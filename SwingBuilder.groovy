@@ -4,12 +4,12 @@ import groovy.swing.SwingBuilder
 swing = new SwingBuilder()
 frame = swing.frame(title:'DETONATE!') {
         menuBar {
-        menu('Action') {
-            menuItem 'New World' 
-            menuItem 'Detonate'
-            menuItem 'Other destruction'
+            menu('Action') {
+                menuItem 'New World' 
+                menuItem 'Detonate'
+                menuItem 'Other destruction'
+            }
         }
-    }
     panel {
         label 'Time (sec)'
         slider()

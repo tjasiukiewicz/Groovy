@@ -1,6 +1,6 @@
 // MarkupBuilder -> html
 
-def writer = new FileWriter('markup.html')
+def writer = new FileWriter('/tmp/markup.html')
 def html = new groovy.xml.MarkupBuilder(writer)
 html.html {
     head {

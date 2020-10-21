@@ -14,5 +14,6 @@ def writable = builder.bind {
 }
 
 def result = writable.toString()
+//println result
 assert result.startsWith("<invoices><invoice date='Tue Dec 01")
 assert result.endsWith('</invoice></invoices>')

@@ -12,4 +12,3 @@ seller.addBook(book1, box)
 seller.addBook(book2, box)
 // (US3)
 seller.send(box)
-
