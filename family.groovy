@@ -1,24 +1,23 @@
 import groovy.xml.MarkupBuilder
 import groovy.xml.XmlSlurper
 
-def writer = new StringWriter()
+def writer = new FileWriter('/tmp/family.xml')
 def document = new MarkupBuilder(writer)
 
 document.family {
-    father "Tomasz"
-    wife "Zofia"
+    father (sex:'male', age: 39,  "Tomasz")
+    wife (sex:'male', age: 38, "Zofia")
     childs  {
-        ['Antoni', 'Wojciech', 'Piotr'].each { chd ->
-            child chd
+        [['Antoni', 12], ['Wojciech', 5], ['Piotr', 3]].each { chdName, ags ->
+            child (sex:'male', age:ags, chdName)
         }
     }
 }
 
-new File('/tmp/family.xml').text = writer.toString()
-
 def inputDoc = new XmlSlurper().parse(new File('/tmp/family.xml'))
 inputDoc.childs.child.each {
-    println it
+    println "Child: $it\t Sex: ${it.@sex}\t Age: ${it.@age}"
 }
 
-println inputDoc.childs.child[1]
+println inputDoc.father // Father
+println inputDoc.childs.child[1] // second child
