@@ -32,7 +32,7 @@ class  Box {
 		def sumPrices = 0
 		books.each { book ->
 			result += "Title: $book.title\tPrice: $book.price\n"
-			prices += book.price
+			sumPrices += book.price
 		}
 		result += "$lineSeparator\nSum: $sumPrices"
 		result
