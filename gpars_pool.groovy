@@ -15,3 +15,15 @@ withPool(3) {
         .filter { it < 10 }
         .collection
 }
+
+println ([1, 2, 3].inject(1, {a, b ->
+    a * b
+}))
+
+// reduce
+// [1, 2, 3]
+//  |  |  | 
+//    +   |
+//    |   |
+//      +
+//      |

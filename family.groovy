@@ -5,7 +5,7 @@ def writer = new FileWriter('/tmp/family.xml')
 def document = new MarkupBuilder(writer)
 
 document.family {
-    father (sex:'male', age: 39,  "Tomasz")
+    father (sex:'male', age: 39, "Tomasz")
     wife (sex:'male', age: 38, "Zofia")
     childs  {
         [['Antoni', 12], ['Wojciech', 5], ['Piotr', 3]].each { chdName, ags ->

@@ -1,5 +1,5 @@
 // Gpars simple parallel
-//@Grab('org.codehaus.gpars:gpars:2.0')
+//@Grab('org.codehaus.gpars:gpars:1.2.1')
 
 // any { ... } -> anyParallel { ... }
 // each { ... } -> eachParallel { ... }
